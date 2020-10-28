@@ -35,7 +35,7 @@ client.on('ready', async () => {
                 const options = {
                     headers: {'Content-Type': 'application/json'}
                 };
-                const response = await axios.post('http://raspberrypi.local:3000/', user, options);
+                const response = await axios.post('http://raspberrypi.local/', user, options);
             } catch (error) {
                 console.error(error);
             }
